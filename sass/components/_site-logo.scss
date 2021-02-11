@@ -1,0 +1,17 @@
+.container-logo {
+    margin-right: 93px;
+  }
+  .site-logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif, Oleo Script, cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .site-logo .logo-primary {
+    color: var(--title-text-color);
+  }
+  .site-logo .logo-secondary {
+    color: var(--white-color);
+  }

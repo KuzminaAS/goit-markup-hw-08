@@ -1,0 +1,49 @@
+.container-contacts:not(:last-child){
+    margin-right: 50px;
+  }
+  
+  .site-contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  
+  & .contacts-currant:hover,
+  & .contacts-currant:focus {
+    color: var(--accent-color);
+    }
+  }
+  
+  .site-contacts .contacts-currant {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+  }
+  
+  .contact-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: #757575;
+  
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+  
+  .contacts-currant:hover &,
+  .contacts-currant:focus &{
+    fill: var(--accent-color);
+  }
+  .contacts-currant:hover &::after,
+  .contacts-currant:focus &::after {
+    fill: var(--accent-color);
+  }
+  }
+  
