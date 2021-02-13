@@ -30,12 +30,15 @@
   .site-contacts {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     
   & .contacts-currant:hover,
   & .contacts-currant:focus {
     color: var(--accent-color);
     }
   }
+
+
 .item-site-contacts {
   padding-bottom: 10px;
 }
@@ -71,6 +74,17 @@
   .contacts-currant:focus &::after {
     fill: var(--accent-color);
   }
+  }
+}
+
+
+@media screen and (min-width:1200px) {
+  .site-contacts {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .item-site-contacts {
+    margin-right: 30px;
   }
 }
 

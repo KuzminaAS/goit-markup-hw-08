@@ -33,8 +33,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    align-items:baseline;
+  }
 }
-// .main-container {
-//   display: block;
-//   align-items: baseline;
-// }
+  
+

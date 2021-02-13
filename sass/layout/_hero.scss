@@ -42,19 +42,38 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
   
    background-image:url('../images/img_bg/hero_bg-tablet@2x.jpg');
 }
+@media screen and (min-width: 1200px) {
+  background-image:url('../images/img_bg/hero_bg-desktop.jpg');
 }
+@media screen and (min-device-pixel-ratio: 3) and (min-width: 1200px),
+screen and (-webkit-min-device-pixel-ratio: 3) and (min-width: 1200px),
+screen and (-o-min-device-pixel-ratio: 3/1) and (min-width: 1200px),
+screen and (min-resolution: 3dppx) and (min-width: 1200px),
+screen and (min-resolution: 288dpi) and (min-width: 1200px) {
+    background-image:url('../images/img_bg/hero_bg-desktop@2x.jpg');
+  }
+}
+
 .hero-content {
   margin: 0 auto;
-  // max-width: 696px;
   text-align: center;
   max-width: 360px;
 }
 
+
+@media screen and (min-width: 1200px) {
+  .hero-content{
+  max-width: 696px;
+}
+.hero-title {
+  @include font(44px, 900, 60px);
+}
+}
+
+
 .hero .hero-title {
   color: var(--white-color);
-  // @include font(44px, 900, 60px);
   text-transform: uppercase;
-
     @include font(26px, 900, 42px);
 }
 

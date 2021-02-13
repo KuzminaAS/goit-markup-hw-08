@@ -14,7 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="styles-body">
     <!-- Шапка -->
@@ -22,18 +21,36 @@
 
       <div class="container">
 
-        <!-- <nav class="navigation-site"> -->
+        <nav class="navigation-site">
 
           <div class="container-logo">
             <a href="./index.html" class="site-logo">Web<span class="logo-primary">Studio</span></a>
           </div>
+          
+          <ul class="site-nav">
+            <li class="nav-list-item" > <a href="./index.html" class="link">Студия</a> 
+            </li>
+            <li class="nav-list-item" > <a href="./portfolio.html" class="link currant portfolio-link">Портфолио</a></li>
+            <li class="nav-list-item" > <a href="" class="link link-contacts">Контакты</a></li>
+          </ul>
+        </nav>
 
-        <!-- </nav> -->
-        <button class="burger-btn" data-menu-open> 
-          <svg  width="40"  height="40" class="burger-icon">
-            <use href="./images/symbol-defs.svg#icon-burger_40px"></use>
-          </svg>
-        </button>
+        <ul class="site-contacts">
+          
+          <li class='item-site-contacts'>
+            <a href="mailto:info@devstudio.com" class="contacts-currant email"> 
+              <svg class='contact-icon'> 
+              <use href='./images/symbol-defs.svg#icon-envelope'></use>
+            </svg> 
+            info@devstudio.com</a>
+          </li>
+          <li class="item-site-contacts">
+            <a href="callto:+380961111111" class="contacts-currant number"> 
+              <svg class='contact-icon'> 
+              <use href='./images/symbol-defs.svg#icon-smartphone'></use>
+            </svg> 
+            +38 096 111 11 11</a>
+          </li>
 
         <div class="mobile-menu is-menu-hidden" data-menu>
           <button type="button" class="btn" data-menu-close>
@@ -123,13 +140,17 @@
                   <div class="modal-box"> 
 
               <picture>
-                 <!-- <source srcset="/images/portfolio/portfolio-tablet/team-tablet-04.webp 1x, /images/team/team-tablet/team-tablet-04@2x.webp 2x" 
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio1-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio1-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio1-desktop1.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio1-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" >
+                 <source srcset="./images/portfolio/portfolio-tablet/p-tablet-01.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-01@2x.webp 2x" 
                 media="(min-width: 768px)" type="image/webp">
-                <source srcset="/images/team/team-tablet/team-tablet-04.jpg 1x, /images/team/team-tablet/team-tablet-04@2x.jpg 2x" 
-                media="(min-width: 768px)" > -->
-                <source srcset="/images/portfolio/portfolio-mobile/portfolio-mob-01.webp 1x, /images/portfolio/portfolio-mobile/portfolio-mob-01@2x.webp 2x" 
+                <source srcset="./images/portfolio/portfolio-tablet/p-tablet-01.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-01@2x.jpg 2x"
+                media="(min-width: 768px)" >
+                <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-01.webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-01@2x.webp 2x" 
                 media="(min-width: 480px)" type="image/webp">
-                <source srcset="/images/portfolio/portfolio-mobile/portfolio-mob-01.jpg 1x, /images/portfolio/portfolio-mobile/portfolio-mob-01@2x.jpg 2x"
+                <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-01.jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-01@2x.jpg 2x"
                 media="(min-width: 480px)" >
                 <img src="./images/technocryak.jpg" alt="Веб-сайт Технокряк" /> 
                 <source >
@@ -148,13 +169,17 @@
                 <div class="modal-box"> 
 
                   <picture>
-                    <!-- <source srcset="/images/portfolio/portfolio-tablet/team-tablet-04.webp 1x, /images/team/team-tablet/team-tablet-04@2x.webp 2x" 
-                   media="(min-width: 768px)" type="image/webp">
-                   <source srcset="/images/team/team-tablet/team-tablet-04.jpg 1x, /images/team/team-tablet/team-tablet-04@2x.jpg 2x" 
-                   media="(min-width: 768px)" > -->
-                   <source srcset="/images/portfolio/portfolio-mobile/portfolio-mob-02.webp 1x, /images/portfolio/portfolio-mobile/portfolio-mob-02@2x.webp 2x" 
+                    <source srcset="./images/portfolio/portfolio-desktop/portfolio2-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio2-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio2-desktop2.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio2-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" >
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-02.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-02@2x.webp 2x" 
+                media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-tablet/p-tablet-02.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-02@2x.jpg 2x"
+                media="(min-width: 768px)" >
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-02.webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-02@2x.webp 2x" 
                    media="(min-width: 480px)" type="image/webp">
-                   <source srcset="/images/portfolio/portfolio-mobile/portfolio-mob-02.jpg 1x, /images/portfolio/portfolio-mobile/portfolio-mob-02@2x.jpg 2x"
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-02.jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-02@2x.jpg 2x"
                    media="(min-width: 480px)" >
                    <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" />
                    <source >
@@ -174,13 +199,17 @@
               <a href="#" class='link-content-portfolio'>
                 <div class="modal-box"> 
                   <picture>
-                    <!-- <source srcset="/images/portfolio/portfolio-tablet/team-tablet-04.webp 1x, /images/team/team-tablet/team-tablet-04@2x.webp 2x" 
-                   media="(min-width: 768px)" type="image/webp">
-                   <source srcset="/images/team/team-tablet/team-tablet-04.jpg 1x, /images/team/team-tablet/team-tablet-04@2x.jpg 2x" 
-                   media="(min-width: 768px)" > -->
-                   <source srcset="/images/portfolio/portfolio-mobile/portfolio-mob-03.webp 1x, /images/portfolio/portfolio-mobile/portfolio-mob-03@2x.webp 2x" 
+                    <source srcset="./images/portfolio/portfolio-desktop/portfolio3-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio3-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio3-desktop3.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio3-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" >
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-03.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-03@2x.webp 2x" 
+                media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-tablet/p-tablet-03.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-03@2x.jpg 2x"
+                media="(min-width: 768px)" >
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-03.webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-03@2x.webp 2x" 
                    media="(min-width: 480px)" type="image/webp">
-                   <source srcset="/images/portfolio/portfolio-mobile/portfolio-mob-03.jpg 1x, /images/portfolio/portfolio-mobile/portfolio-mob-03@2x.jpg 2x"
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-03.jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-03@2x.jpg 2x"
                    media="(min-width: 480px)" >
                    <img src="./images/restaurant.jpg" alt="Ресторан Seafood" />
                    <source >
@@ -198,13 +227,17 @@
               <a href="#" class='link-content-portfolio'>
                 <div class="modal-box"> 
                   <picture>
-                    <!-- <source srcset="/images/portfolio/portfolio-tablet/team-tablet-04.webp 1x, /images/team/team-tablet/team-tablet-04@2x.webp 2x" 
-                   media="(min-width: 768px)" type="image/webp">
-                   <source srcset="/images/team/team-tablet/team-tablet-04.jpg 1x, /images/team/team-tablet/team-tablet-04@2x.jpg 2x" 
-                   media="(min-width: 768px)" > -->
-                   <source srcset="/images/portfolio/portfolio-mobile/portfolio-mob-04.webp 1x, /images/portfolio/portfolio-mobile/portfolio-mob-04@2x.webp 2x" 
+                    <source srcset="./images/portfolio/portfolio-desktop/portfolio4-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio4-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio4-desktop4.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio4-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" >
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-04.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-04@2x.webp 2x" 
+                    media="(min-width: 768px)" type="image/webp">
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-04.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-04@2x.jpg 2x"
+                    media="(min-width: 768px)" >
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-04.webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-04@2x.webp 2x" 
                    media="(min-width: 480px)" type="image/webp">
-                   <source srcset="/images/portfolio/portfolio-mobile/portfolio-mob-04.jpg 1x, /images/portfolio/portfolio-mobile/portfolio-mob-04@2x.jpg 2x"
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-04.jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-04@2x.jpg 2x"
                    media="(min-width: 480px)" >
                    <img src="./images/prime.jpg" alt="Проект Prime" />
                    <source >
@@ -222,13 +255,17 @@
               <a href="#" class='link-content-portfolio'>
                 <div class="modal-box"> 
                   <picture>
-                    <!-- <source srcset="/images/portfolio/portfolio-tablet/team-tablet-04.webp 1x, /images/team/team-tablet/team-tablet-04@2x.webp 2x" 
-                   media="(min-width: 768px)" type="image/webp">
-                   <source srcset="/images/team/team-tablet/team-tablet-04.jpg 1x, /images/team/team-tablet/team-tablet-04@2x.jpg 2x" 
-                   media="(min-width: 768px)" > -->
-                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-05(1x).webp 1x, /images/portfolio/portfolio-mobile/portfolio-mob-05(2x).webp 2x" 
+                    <source srcset="./images/portfolio/portfolio-desktop/portfolio-05-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio-05-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio-05-desktop.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio-05-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" >
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-05.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-05@2x.webp 2x" 
+                media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-tablet/p-tablet-05.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-05@2x.jpg 2x"
+                media="(min-width: 768px)" >
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-05(1x).webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-05(2x).webp 2x" 
                    media="(min-width: 480px)" type="image/webp">
-                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-05(1x).jpg 1x, /images/portfolio/portfolio-mobile/portfolio-mob-05(2x).jpg 2x"
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-05(1x).jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-05(2x).jpg 2x"
                    media="(min-width: 480px)" >
                    <img src="./images/boxes.jpg" alt="Проект Boxes" />
                    <source >
@@ -245,8 +282,22 @@
             <li class="list-content-item">
               <a href="#" class='link-content-portfolio'>
                 <div class="modal-box"> 
-
-                  <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop/portfolio-06-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio-06-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio-06-desktop.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio-06-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" >
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-06.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-06@2x.webp 2x" 
+                media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-tablet/p-tablet-06.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-06@2x.jpg 2x"
+                media="(min-width: 768px)" >
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-06(1x).webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-06(2x).webp 2x" 
+                   media="(min-width: 480px)" type="image/webp">
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-06(1x).jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-06(2x).jpg 2x"
+                   media="(min-width: 480px)" >
+                   <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" />
+                   <source >
+                 </picture>
 
                   <p class="text-modal-box">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -259,9 +310,23 @@
             <li class="list-content-item">
               <a href="#" class='link-content-portfolio'>
                 <div class="modal-box"> 
-
-                  <img src="./images/LimitedEdition.jpg" alt="Издание Limited Edition" />
-
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop/portfolio-07-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio-07-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio-07-desktop.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio-07-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" >
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-07.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-07@2x.webp 2x" 
+                    media="(min-width: 768px)" type="image/webp">
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-07.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-07@2x.jpg 2x"
+                    media="(min-width: 768px)" >
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-07(1x).webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-07(2x).webp 2x" 
+                   media="(min-width: 480px)" type="image/webp">
+                   <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-07(1x).jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-07(2x).jpg 2x"
+                   media="(min-width: 480px)" >
+                   <img src="./images/LimitedEdition.jpg" alt="Издание Limited Edition" />
+                   <source >
+                 </picture>
+                
                   <p class="text-modal-box">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="content-portfolio">
@@ -273,8 +338,22 @@
             <li class="list-content-item">
               <a href="#" class='link-content-portfolio'>
                 <div class="modal-box"> 
-
+                <picture>
+                  <source srcset="./images/portfolio/portfolio-desktop/portfolio-08-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio-08-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-desktop/portfolio-08-desktop.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio-08-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" >
+                  <source srcset="./images/portfolio/portfolio-tablet/p-tablet-08.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-08@2x.webp 2x" 
+                media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-tablet/p-tablet-08.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-08@2x.jpg 2x"
+                media="(min-width: 768px)" >
+                  <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-08(1x).webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-08(2x).webp 2x" 
+                  media="(min-width: 480px)" type="image/webp">
+                  <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-08(1x).jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-08(2x).jpg 2x"
+                  media="(min-width: 480px)" >
                   <img src="./images/Lab.jpg" alt="Проект LAB" />
+                  <source >
+                </picture>
 
                   <p class="text-modal-box">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
 
@@ -289,8 +368,23 @@
 
               <a href="#" class='link-content-portfolio'>
                 <div class="modal-box"> 
-
-                  <img src="./images/GrowingBusiness.jpg" alt="Growing Business" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop/portfolio-09-desktop.webp 1x, ./images/portfolio/portfolio-desktop/portfolio-09-desktop@2x.webp 2x" 
+                    media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="./images/portfolio/portfolio-desktop/portfolio-09-desktop.jpg 1x, ./images/portfolio/portfolio-desktop/portfolio-09-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" >
+                    <source srcset="./images/portfolio/portfolio-tablet/p-tablet-09.webp 1x, ./images/portfolio/portfolio-tablet/p-tablet-09@2x.webp 2x" 
+                media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/portfolio/portfolio-tablet/p-tablet-09.jpg 1x, ./images/portfolio/portfolio-tablet/p-tablet-09@2x.jpg 2x"
+                media="(min-width: 768px)" >
+                    <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-09(1x).webp 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-09(2x).webp 2x" 
+                    media="(min-width: 480px)" type="image/webp">
+                    <source srcset="./images/portfolio/portfolio-mobile/portfolio-mob-09(1x).jpg 1x, ./images/portfolio/portfolio-mobile/portfolio-mob-09(2x).jpg 2x"
+                    media="(min-width: 480px)" >
+                    <img src="./images/GrowingBusiness.jpg" alt="Growing Business" />
+                    <source >
+                  </picture>
+                  
 
                   <p class="text-modal-box">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -324,7 +418,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer-join">
           <p class="join">Присоединяйтесь</p>
           <ul class="social-list">
             <li class="social-item">
@@ -356,7 +450,7 @@
                 </a>
              </li>
            </ul>
-          </div>
+          </div> 
      
         <div class="form-field-subscribe"> 
           <form action="#" class="form-subscribe">

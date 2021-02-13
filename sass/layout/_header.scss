@@ -32,7 +32,7 @@
     width: 100%;
     max-width: 480px;
     height: 100vh;
-    z-index: 2;
+    // z-index: 2;
     background-color: #FFFFFF;
     padding-top: 48px;
     padding-left: 40px;
@@ -188,12 +188,18 @@
       content:'';
       width: 48px;
       height: 4px;
-      margin-top: 40px;
+      margin-top: 48px;
       background: #2196F3;
       border-radius: 2px;
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    .currant::after {
+    margin-top: 35px;
+  }
+}
+  
 
 // .header  {
 //   padding-top: 32px;

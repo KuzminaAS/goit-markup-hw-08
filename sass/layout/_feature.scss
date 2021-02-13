@@ -17,7 +17,9 @@
     flex-wrap: wrap;
     margin-right: -30px;
   }
-  
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .feature-item {
@@ -44,6 +46,11 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+  
+  flex-basis: calc(100% /3 - 30px);
+
   }
 }
 

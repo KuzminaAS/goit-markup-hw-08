@@ -8,6 +8,9 @@
   @media screen and (min-width: 768px) {
     width: 50%;
   }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((50%-45px)/2);
+  }
 }
 .footer-join {
   margin-bottom: 60px;
@@ -16,6 +19,9 @@
     width: 50%;
     margin-bottom: 70px;
   } 
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((50%-45px)/2);
+  }
 }
 
 .adress-item {

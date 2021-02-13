@@ -28,7 +28,6 @@
     font-size: 20px;
     font-weight: 700;
     color: #212121;
-    font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
@@ -43,7 +42,6 @@
   .contact-label {
     font-size: 12px;
   }
-  
   
   .container-contact-form {
     position: relative;
@@ -94,8 +92,8 @@
   
   .contact-policy-label {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color:#757575;
       
@@ -112,7 +110,7 @@
     background-position: center;
     }
   }
-    
+
   .checkbox:checked + .contact-policy-label::before {
     background-color: #2196F3;
     border:#2196F3;
@@ -142,3 +140,10 @@
     border-radius: 4px;
     cursor:pointer;
   }
+  @media screen and (min-width:1200px) {
+    .contact-policy-label {
+    font-size: 14px;
+    line-height: 1.71;
+    }
+  }
+  

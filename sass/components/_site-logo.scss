@@ -15,3 +15,9 @@
   .site-logo .logo-secondary {
     color: var(--white-color);
   }
+  @media screen and (min-width:768px) {
+    .container-logo {
+    margin-right: 88px;
+  }
+  }
+  
