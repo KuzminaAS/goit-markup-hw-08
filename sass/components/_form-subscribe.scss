@@ -1,9 +1,19 @@
 
 .form-subscribe {
-  align-items:center;
-  justify-content: center;
-  margin-left: 93px;
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
 }
+.form-field-subscribe {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+// .form-subscribe {
+//   align-items:center;
+//   justify-content: center;
+//   margin-left: 93px;
+// }
 .text-subscribe {
   display: block;
   font-size: 14px;
@@ -38,6 +48,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor:pointer;
+
+  margin-top: 20px;
 }
 .icon-send {
   position: absolute;
