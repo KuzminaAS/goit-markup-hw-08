@@ -754,6 +754,7 @@ button {
   width: 100%;
   max-width: 480px;
   height: 100vh;
+  z-index: 2;
   background-color: #FFFFFF;
   padding-top: 48px;
   padding-left: 40px;
@@ -1542,6 +1543,7 @@ button {
 
 .portfolio {
   padding: 60px 0px;
+  z-index: 1;
 }
 
 .list-content {
