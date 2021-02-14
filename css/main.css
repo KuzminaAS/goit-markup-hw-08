@@ -571,6 +571,12 @@ button {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 45px;
+  }
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,12 +641,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .form-subscribe {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 570px;
     text-align: start;
   }
 }
@@ -684,6 +685,7 @@ button {
 
 .button-send {
   position: relative;
+  text-align: center;
   min-width: 200px;
   padding: 10px 29px;
   margin-left: 12px;
@@ -697,6 +699,18 @@ button {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .button-send {
+    text-align: start;
+    margin-top: 0;
+    bottom: 50px;
+    left: 62%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 
 .icon-send {
