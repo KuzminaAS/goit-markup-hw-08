@@ -182,21 +182,18 @@
     }
     
     .currant::after {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
       content:'';
+      position: absolute;
+      display: block;
       width: 48px;
       height: 4px;
-      margin-top: 48px;
       background: #2196F3;
       border-radius: 2px;
+
+      left:0;
+      bottom:0;
+
+      transform: translateX(245px);
     }
   }
-
-  @media screen and (min-width: 1200px) {
-    .currant::after {
-    margin-top: 35px;
-  }
-}
   
